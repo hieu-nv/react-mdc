@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "cd packages/hieunv && yarn start",
+    "mdc": "cd packages/react-mdc && tsc"
+  },
+  "devDependencies": {
+    "lerna": "^3.4.0"
+  }
+}
