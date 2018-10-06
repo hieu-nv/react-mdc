@@ -5,9 +5,12 @@
   "author": "HieuNV",
   "license": "MIT",
   "dependencies": {
-    "@types/react": "^16.4.14",
-    "react": "^16.5.1",
-    "material-components-web":"^0.39.3",
-    "typescript": "^3.0.3"
+    "react": "16.5.2",
+    "classnames": "2.2.6",
+    "typescript": "3.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "16.4.15",
+    "@types/classnames": "2.2.6"
   }
 }

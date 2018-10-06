@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@hieunv/react-scripts": "0.4.1",
+    "@hieunv/react-scripts": "2.0.4",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
   },

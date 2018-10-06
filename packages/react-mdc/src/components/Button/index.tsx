@@ -1,9 +1,8 @@
 import * as React from 'react';
-import {MouseEvent, ReactNode} from "react";
 
 export interface ButtonProps {
-    children?: ReactNode
-    onClick($event : MouseEvent<HTMLElement>) : void;
+    children?: React.ReactNode
+    onClick($event : React.MouseEvent<HTMLElement>) : void;
 }
 export class Button extends React.Component<ButtonProps> {
 
