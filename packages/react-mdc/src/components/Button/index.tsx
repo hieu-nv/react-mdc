@@ -10,7 +10,7 @@ export class Button extends React.Component<ButtonProps> {
         super(props);
     }
 
-    render(): React.ReactNode {
+    public render(): React.ReactNode {
         return <button className="mdc-button" onClick={this.props.onClick}>{ this.props.children }</button>
     }
 }

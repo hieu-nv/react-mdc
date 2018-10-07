@@ -15,6 +15,6 @@ export class Header extends React.PureComponent {
           <span className={classNames('mdc-top-app-bar__title')}>{this.props.children}</span>
         </section>
       </div>
-    </header>;
+    </header>
   }
 }

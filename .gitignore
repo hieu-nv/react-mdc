@@ -1,4 +1,9 @@
 packages/react-mdc/dist/
+packages/react-mdc/components/
+packages/react-mdc/connectors/
+packages/react-mdc/index.js
+packages/react-mdc/index.d.ts
+packages/react-mdc/index.js.map
 
 .idea/
 
