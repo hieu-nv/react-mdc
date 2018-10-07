@@ -1,5 +1,11 @@
 # @hieunv/react-mdc
 
+# 0.2.0 (https://github.com/hieu-nv/react-mdc/compare/v0.1.0...v0.2.0) (2018-10-07)
+
+### Features
+
+    * components: AppContent, MainContent, List, NavConnector (2321dc4 (https://github.com/hieu-nv/react-mdc/commit/2321dc4))
+
 # 0.1.0 (https://github.com/hieu-nv/react-mdc/compare/v0.0.1...v0.1.0) (2018-10-06)
 
 ### Features
