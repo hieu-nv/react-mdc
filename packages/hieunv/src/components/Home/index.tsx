@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {Link, RouteComponentProps} from "@reach/router";
-import {Drawer, Header, AppContent, MainContent, List} from '@hieunv/react-mdc/components';
-import {NavConnector} from "@hieunv/react-mdc/connectors";
-import classNames = require("classnames");
+import {Link, RouteComponentProps} from '@reach/router';
+import {Drawer, Header, AppContent, MainContent, List, Button, ButtonIcon} from '@hieunv/react-mdc/components';
+import {NavConnector} from '@hieunv/react-mdc/connectors';
+import classNames = require('classnames');
 
 export class Home extends React.PureComponent<RouteComponentProps> {
 
@@ -42,9 +42,20 @@ export class Home extends React.PureComponent<RouteComponentProps> {
       <AppContent>
         <Header>react-mdc</Header>
         <MainContent>
-          <div className={classNames('mdc-top-app-bar--fixed-adjust')}><span>Test</span></div>
+          <div className={classNames('mdc-top-app-bar--fixed-adjust')}>
+            <h1>Button</h1>
+            <div className="buttons">
+              <Button>default buttton</Button>
+              <Button raised={true}>raised button</Button>
+              <Button unelevated={true}>unelevated button</Button>
+              <Button outlined={true}>outlined button</Button>
+              <Button dense={true}>dense button</Button>
+              <Button icon="favorite">xxx</Button>
+              <Button icon={<ButtonIcon>favorite</ButtonIcon>}>xx</Button>
+            </div>
+          </div>
         </MainContent>
       </AppContent>
-    </div>
+    </div>;
   }
 }
