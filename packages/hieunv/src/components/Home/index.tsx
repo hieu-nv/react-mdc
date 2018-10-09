@@ -3,7 +3,7 @@ import {Link, RouteComponentProps} from '@reach/router';
 import {Drawer, Header, AppContent, MainContent, List, Button, ButtonIcon} from '@hieunv/react-mdc/components';
 import {NavConnector} from '@hieunv/react-mdc/connectors';
 import classNames = require('classnames');
-
+import './Home.scss';
 export class Home extends React.PureComponent<RouteComponentProps> {
 
   private navConnector: NavConnector;
