@@ -45,13 +45,13 @@ export class Home extends React.PureComponent<RouteComponentProps> {
           <div className={classNames('mdc-top-app-bar--fixed-adjust')}>
             <h1>Button</h1>
             <div className="buttons">
-              <Button>default buttton</Button>
-              <Button raised={true}>raised button</Button>
-              <Button unelevated={true}>unelevated button</Button>
-              <Button outlined={true}>outlined button</Button>
-              <Button dense={true}>dense button</Button>
-              <Button icon="favorite">xxx</Button>
-              <Button icon={<ButtonIcon>favorite</ButtonIcon>}>xx</Button>
+              <Button className="button-1">default buttton</Button>
+              <Button className="button-2" raised={true}>raised button</Button>
+              <Button className="button-3" unelevated={true}>unelevated button</Button>
+              <Button className="button-4" outlined={true}>outlined button</Button>
+              <Button className="button-5" dense={true}>dense button</Button>
+              <Button className="button-6" icon="favorite">xxx</Button>
+              <Button className="button-7" icon={<ButtonIcon>favorite</ButtonIcon>}>xx</Button>
             </div>
           </div>
         </MainContent>

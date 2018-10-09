@@ -4,7 +4,9 @@ import { ButtonIcon } from '../ButtonIcon';
 
 export interface ButtonProps {
 
-  children?: any;
+  children?: React.ReactNode;
+
+  className?: string;
 
   dense?: boolean;
 
@@ -21,6 +23,7 @@ export interface ButtonProps {
 
 export class Button extends React.Component<ButtonProps> {
   public static defaultProps: Partial<ButtonProps> = {
+    className: '',
     dense: false,
     outlined: false,
     raised: false,
@@ -33,13 +36,16 @@ export class Button extends React.Component<ButtonProps> {
 
   public render(): React.ReactNode {
     return <button className={
-      classNames({
-        'mdc-button': true,
-        'mdc-button--dense': this.props.dense,
-        'mdc-button--outlined': this.props.outlined,
-        'mdc-button--raised': this.props.raised,
-        'mdc-button--unelevated': this.props.unelevated,
-      })
+      classNames(
+        this.props.className,
+        {
+          'mdc-button': true,
+          'mdc-button--dense': this.props.dense,
+          'mdc-button--outlined': this.props.outlined,
+          'mdc-button--raised': this.props.raised,
+          'mdc-button--unelevated': this.props.unelevated,
+        },
+      )
     } onClick={this.props.onClick}>
       {typeof this.props.icon === 'string' && <ButtonIcon>{this.props.icon}</ButtonIcon>}
       {typeof this.props.icon !== 'string' && this.props.icon}
