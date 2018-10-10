@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "start": "cd packages/hieunv && yarn start",
+    "test": "cd packages/react-mdc && yarn test",
     "mdc": "cd packages/react-mdc && tsc"
   },
   "devDependencies": {
