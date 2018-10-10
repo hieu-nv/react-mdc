@@ -1,4 +1,5 @@
 # @hieunv/react-mdc
+[![Build Status](https://travis-ci.org/hieu-nv/react-mdc.svg?branch=master)](https://travis-ci.org/hieu-nv/react-mdc)
 
 # 0.2.0 (https://github.com/hieu-nv/react-mdc/compare/v0.1.0...v0.2.0) (2018-10-07)
 
