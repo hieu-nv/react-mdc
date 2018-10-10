@@ -13,18 +13,6 @@ before_install:
 - export PATH="$HOME/.yarn/bin:$PATH"
 install: true
 after_success:
-  - yarn install && cd packages/react-mdc && yarn test
-env:
-  matrix:
-  - TEST_SUITE=simple
-  - TEST_SUITE=installs
-  - TEST_SUITE=kitchensink
-  - TEST_SUITE=kitchensink-eject
-  - TEST_SUITE=behavior
-matrix:
-  include:
-  - os: osx
-    node_js: 8
-    env: TEST_SUITE=behavior
-  - node_js: 6
-    env: TEST_SUITE=old-node
+- yarn install
+- cd packages/react-mdc
+- yarn test
