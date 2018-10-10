@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
 import { Button } from '../';
+import { ButtonIcon } from '../../ButtonIcon';
 
 describe('button', () => {
   test('default', () => {
@@ -32,6 +33,39 @@ describe('button', () => {
       expect(outlined.text()).toEqual('outlined');
       expect(outlined.prop('className')).toEqual('mdc-button mdc-button--outlined');
       expect(outlined.prop('disabled')).toEqual(false);
+    });
+  });
+
+  describe('raised', () => {
+    test('default', () => {
+      const outlined = shallow(<Button raised={true}>raised</Button>);
+      expect(outlined.text()).toEqual('raised');
+      expect(outlined.prop('className')).toEqual('mdc-button mdc-button--raised');
+      expect(outlined.prop('disabled')).toEqual(false);
+    });
+  });
+
+  describe('unelevated', () => {
+    test('default', () => {
+      const outlined = shallow(<Button unelevated={true}>unelevated</Button>);
+      expect(outlined.text()).toEqual('unelevated');
+      expect(outlined.prop('className')).toEqual('mdc-button mdc-button--unelevated');
+      expect(outlined.prop('disabled')).toEqual(false);
+    });
+  });
+
+  describe('icon', () => {
+    test('string', () => {
+      const icon = shallow(<Button icon='favorite'>favorite</Button>);
+      expect(icon.html()).toContain('<i class="material-icons mdc-button__icon">favorite</i>');
+      expect(icon.prop('className')).toEqual('mdc-button');
+      expect(icon.prop('disabled')).toEqual(false);
+    });
+    test('React.ReactNode', () => {
+      const icon = shallow(<Button icon={<ButtonIcon>favorite</ButtonIcon>}>favorite</Button>);
+      expect(icon.html()).toContain('<i class="material-icons mdc-button__icon">favorite</i>');
+      expect(icon.prop('className')).toEqual('mdc-button');
+      expect(icon.prop('disabled')).toEqual(false);
     });
   });
 });

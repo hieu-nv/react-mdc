@@ -51,8 +51,7 @@ export class Button extends React.Component<ButtonProps> {
         },
       )
     } disabled={this.props.disabled} onClick={this.props.onClick}>
-      {typeof this.props.icon === 'string' && <ButtonIcon>{this.props.icon}</ButtonIcon>}
-      {typeof this.props.icon !== 'string' && this.props.icon}
+      {typeof this.props.icon === 'string' && <ButtonIcon>{this.props.icon}</ButtonIcon> || this.props.icon}
       {this.props.children}
     </button>;
   }
