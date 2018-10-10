@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import { Button } from '../';
-import { ButtonIcon } from '../../ButtonIcon';
+import { Button } from '../../../src/components/Button';
+import { ButtonIcon } from '../../../src/components/ButtonIcon';
 
 describe('button', () => {
   test('default', () => {

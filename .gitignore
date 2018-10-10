@@ -5,6 +5,10 @@ packages/react-mdc/index.js
 packages/react-mdc/index.d.ts
 packages/react-mdc/index.js.map
 packages/react-mdc/coverage/
+packages/react-mdc/setupEnzyme.js
+packages/react-mdc/setupEnzyme.js.map
+packages/react-mdc/setupEnzyme.d.ts
+
 .idea/
 
 node_modules/
