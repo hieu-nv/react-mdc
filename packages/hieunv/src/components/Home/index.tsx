@@ -11,6 +11,7 @@ export class Home extends React.PureComponent<RouteComponentProps> {
   constructor(props: RouteComponentProps) {
     super(props);
     this.navConnector = new NavConnector();
+    this.onClick = this.onClick.bind(this);
   }
 
   public componentDidMount(): void {
@@ -45,7 +46,7 @@ export class Home extends React.PureComponent<RouteComponentProps> {
           <div className={classNames('mdc-top-app-bar--fixed-adjust')}>
             <h1>Button</h1>
             <div className="buttons">
-              <Button className="button-1">default buttton</Button>
+              <Button className="button-1" onClick={this.onClick}>default buttton</Button>
               <Button className="button-2" raised={true}>raised button</Button>
               <Button className="button-3" unelevated={true}>unelevated button</Button>
               <Button className="button-4" outlined={true}>outlined button</Button>
@@ -57,5 +58,10 @@ export class Home extends React.PureComponent<RouteComponentProps> {
         </MainContent>
       </AppContent>
     </div>;
+  }
+
+  private onClick($event: React.MouseEvent<HTMLElement>): void {
+    console.log(this);
+    console.log($event);
   }
 }

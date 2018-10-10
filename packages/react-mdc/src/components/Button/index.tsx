@@ -28,7 +28,6 @@ export class Button extends React.Component<ButtonProps> {
     className: '',
     dense: false,
     disabled: false,
-    onClick: ($event: React.MouseEvent<HTMLElement>) => $event,
     outlined: false,
     raised: false,
     unelevated: false,
