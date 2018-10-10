@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/hieu-nv/react-mdc.git"
   },
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "./index.js",
   "author": "HieuNV",
   "license": "MIT",
@@ -40,8 +40,7 @@
   },
   "scripts": {
     "semantic-release": "semantic-release --dry-run",
-    "travis-deploy-once": "travis-deploy-once",
-    "publish": "tsc && npm publish --accesss=public"
+    "travis-deploy-once": "travis-deploy-once"
   },
   "publishConfig": {
     "access": "public"

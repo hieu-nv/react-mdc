@@ -5,3 +5,12 @@ node_modules/
 tsconfig.json
 
 tslint.json
+
+coverage/
+
+__tests__
+
+jest.config.js
+setupEnzyme.d.ts
+setupEnzyme.js
+setupEnzyme.js.map
