@@ -20,16 +20,26 @@
     "typescript": "3.1.1"
   },
   "devDependencies": {
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "enzyme": "^3.7.0",
+    "enzyme-to-json": "^3.3.4",
+    "enzyme-adapter-react-16": "^1.6.0",
     "@types/classnames": "2.2.6",
     "@types/material__animation": "^0.35.0",
     "@types/material__drawer": "^0.35.0",
     "@types/material__textfield": "^0.35.0",
     "@types/material__top-app-bar": "^0.35.0",
     "@types/react": "16.4.16",
+    "@types/jest": "^23.3.5",
+    "@types/enzyme": "^3.1.14",
+    "@types/enzyme-to-json": "^1.5.2",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
     "semantic-release": "^15.9.17",
     "travis-deploy-once": "^5.0.9"
   },
   "scripts": {
+    "test": "jest",
     "semantic-release": "semantic-release --dry-run",
     "travis-deploy-once": "travis-deploy-once",
     "publish": "tsc && npm publish --accesss=public"

@@ -10,6 +10,8 @@ export interface ButtonProps {
 
   dense?: boolean;
 
+  disabled?: boolean;
+
   icon?: string | React.ReactNode,
 
   outlined?: boolean;
@@ -25,6 +27,8 @@ export class Button extends React.Component<ButtonProps> {
   public static defaultProps: Partial<ButtonProps> = {
     className: '',
     dense: false,
+    disabled: false,
+    onClick: ($event: React.MouseEvent<HTMLElement>) => $event,
     outlined: false,
     raised: false,
     unelevated: false,
@@ -46,7 +50,7 @@ export class Button extends React.Component<ButtonProps> {
           'mdc-button--unelevated': this.props.unelevated,
         },
       )
-    } onClick={this.props.onClick}>
+    } disabled={this.props.disabled} onClick={this.props.onClick}>
       {typeof this.props.icon === 'string' && <ButtonIcon>{this.props.icon}</ButtonIcon>}
       {typeof this.props.icon !== 'string' && this.props.icon}
       {this.props.children}
