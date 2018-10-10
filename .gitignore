@@ -4,7 +4,7 @@ packages/react-mdc/connectors/
 packages/react-mdc/index.js
 packages/react-mdc/index.d.ts
 packages/react-mdc/index.js.map
-
+packages/react-mdc/coverage/
 .idea/
 
 node_modules/
