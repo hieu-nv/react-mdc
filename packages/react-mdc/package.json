@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/hieu-nv/react-mdc.git"
   },
-  "version": "0.1.0",
+  "version": "0.3.0",
   "main": "./index.js",
   "author": "HieuNV",
   "license": "MIT",
