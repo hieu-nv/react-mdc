@@ -5,3 +5,4 @@ export * from './Drawer';
 export * from './AppContent'
 export * from './MainContent';
 export * from './List';
+export * from './TopAppBar';

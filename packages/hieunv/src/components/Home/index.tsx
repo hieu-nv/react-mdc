@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Link, RouteComponentProps} from '@reach/router';
-import {Drawer, Header, AppContent, MainContent, List, Button, ButtonIcon} from '@hieunv/react-mdc/components';
+import {Drawer, TopAppBar, AppContent, MainContent, List, Button, ButtonIcon} from '@hieunv/react-mdc';
 import {NavConnector} from '@hieunv/react-mdc/connectors';
 import classNames = require('classnames');
 import './Home.scss';
@@ -41,7 +41,13 @@ export class Home extends React.PureComponent<RouteComponentProps> {
         </List>
       </Drawer>
       <AppContent>
-        <Header>react-mdc</Header>
+        <TopAppBar id="app-bar" title="react-mdc">
+
+            <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Download">file_download</a>
+            <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Print this page">print</a>
+            <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page">bookmark</a>
+
+        </TopAppBar>
         <MainContent>
           <div className={classNames('mdc-top-app-bar--fixed-adjust')}>
             <h1>Button</h1>

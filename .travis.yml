@@ -14,4 +14,4 @@ before_install:
 install:
 - yarn install
 after_success:
-- yarn test
+- yarn build
