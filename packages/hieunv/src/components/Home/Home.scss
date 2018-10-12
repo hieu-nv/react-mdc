@@ -3,3 +3,10 @@
 .button-7 {
   @include mdc-button-shape-radius(18px);
 }
+
+.mdc-top-app-bar__action-item {
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

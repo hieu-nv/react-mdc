@@ -1,9 +1,10 @@
 import * as React from 'react';
-import {Link, RouteComponentProps} from '@reach/router';
-import {Drawer, TopAppBar, AppContent, MainContent, List, Button, ButtonIcon} from '@hieunv/react-mdc';
-import {NavConnector} from '@hieunv/react-mdc/connectors';
+import { Link, RouteComponentProps } from '@reach/router';
+import { Drawer, TopAppBar, AppContent, MainContent, List, Button, ButtonIcon } from '@hieunv/react-mdc';
+import { NavConnector } from '@hieunv/react-mdc/connectors';
 import classNames = require('classnames');
 import './Home.scss';
+
 export class Home extends React.PureComponent<RouteComponentProps> {
 
   private navConnector: NavConnector;
@@ -42,11 +43,13 @@ export class Home extends React.PureComponent<RouteComponentProps> {
       </Drawer>
       <AppContent>
         <TopAppBar id="app-bar" title="react-mdc">
-
-            <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Download">file_download</a>
-            <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Print this page">print</a>
-            <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page">bookmark</a>
-
+          <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Download">file_download</a>
+          <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Print this page">print</a>
+          <a href="#" className="material-icons mdc-top-app-bar__action-item"
+             aria-label="Bookmark this page">bookmark</a>
+          <a href="https://github.com/hieu-nv/react-mdc" className="mdc-top-app-bar__action-item">
+            <img src="https://angular.io/assets/images/logos/github-icon.svg"/>
+          </a>
         </TopAppBar>
         <MainContent>
           <div className={classNames('mdc-top-app-bar--fixed-adjust')}>
