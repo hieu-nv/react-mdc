@@ -56,7 +56,7 @@ export class Home extends React.PureComponent<RouteComponentProps> {
             <h1>Button</h1>
             <div className="buttons">
               <Button className="button-1" onClick={this.onClick}>default buttton</Button>
-              <Button className="button-2" raised={true}>raised button</Button>
+              <Button className="button-2" raised={true} ripple={true}>raised button</Button>
               <Button className="button-3" unelevated={true}>unelevated button</Button>
               <Button className="button-4" outlined={true}>outlined button</Button>
               <Button className="button-5" dense={true}>dense button</Button>

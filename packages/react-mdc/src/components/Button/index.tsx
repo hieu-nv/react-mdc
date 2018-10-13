@@ -1,6 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import { ButtonIcon } from '../ButtonIcon';
+import {MDCRipple} from "@material/ripple";
+import {RefObject} from "react";
 
 export interface ButtonProps {
 
@@ -18,6 +20,8 @@ export interface ButtonProps {
 
   raised?: boolean;
 
+  ripple?: boolean;
+
   unelevated?: boolean;
 
   onClick?: ($event: React.MouseEvent<HTMLElement>) => void;
@@ -30,15 +34,28 @@ export class Button extends React.Component<ButtonProps> {
     disabled: false,
     outlined: false,
     raised: false,
+    ripple: false,
     unelevated: false,
   };
 
+  private readonly ref: RefObject<HTMLButtonElement>;
+  private mdc: MDCRipple;
+
   constructor(props: any) {
     super(props);
+
+    this.ref = React.createRef();
+  }
+
+  componentDidMount() {
+    console.log(this.ref);
+    if (this.props.ripple && this.ref && this.ref.current) {
+      this.mdc = MDCRipple.attachTo(this.ref.current);
+    }
   }
 
   public render(): React.ReactNode {
-    return <button className={
+    return <button ref={this.ref} className={
       classNames(
         this.props.className,
         {
