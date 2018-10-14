@@ -1,8 +1,9 @@
 import * as React from 'react';
+import {RefObject} from 'react';
 import classNames from 'classnames';
-import { ButtonIcon } from '../ButtonIcon';
-import {MDCRipple} from "@material/ripple";
-import {RefObject} from "react";
+import {ButtonIcon} from '../ButtonIcon';
+// @ts-ignore
+import {MDCRipple} from "@material/ripple/dist/mdc.ripple";
 
 export interface ButtonProps {
 
@@ -48,7 +49,6 @@ export class Button extends React.Component<ButtonProps> {
   }
 
   componentDidMount() {
-    console.log(this.ref);
     if (this.props.ripple && this.ref && this.ref.current) {
       this.mdc = MDCRipple.attachTo(this.ref.current);
     }

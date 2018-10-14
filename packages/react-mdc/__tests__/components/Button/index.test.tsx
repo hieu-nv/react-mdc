@@ -38,7 +38,7 @@ describe('button', () => {
 
   describe('raised', () => {
     test('default', () => {
-      const outlined = shallow(<Button raised={true}>raised</Button>);
+      const outlined = shallow(<Button raised={true} ripple={true}>raised</Button>);
       expect(outlined.text()).toEqual('raised');
       expect(outlined.prop('className')).toEqual('mdc-button mdc-button--raised');
       expect(outlined.prop('disabled')).toEqual(false);
